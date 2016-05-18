@@ -1,29 +1,33 @@
-// Pin data
-int SeIn_1 = 9;
-int SeOu_1 = 8;
-int SeIn_2 = 10;
-int SeOu_2 = 11;
+/// Name: Internet of Things: Traffic Counter
 
+// Pin data
+int inputPins[] = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+int inputPinsLength = 10;
 
 void setup() {
-  pinMode (SeIn_1, INPUT_PULLUP);
-  pinMode (SeOu_1, INPUT_PULLUP);
-  pinMode (SeIn_2, INPUT_PULLUP);
-  pinMode (SeOu_2, INPUT_PULLUP);
+	for (int i = 0; i < inputPinsLength; i++) {
+		pinMode(inputPins[i], INPUT);
+	}
   
-  Serial.begin(9600);
-  while (!Serial) {}
+	Serial.begin(9600);
+	while (!Serial) {}
 }
 
-
-int t1 = 0;
+int t[] = {0, 0, 0, 0, 0};
+int sensorNr = 5;
 int in = 0;
 
-boolean XSI_1;
-boolean XSO_1;
-boolean SI_1;
-boolean SO_1;
+boolean SO[] = {false, false, false, false, false};
+boolean SI[] = {false, false, false, false, false};
+boolean XSO[] = {false, false, false, false, false};
+boolean XSI[] = {false, false, false, false, false};
 
+
+void readAllSensors() {
+	for (int i = 0; i < sensorNr; i++) {
+		SO[i] = !digitalRead(inputPins[]);
+	}
+}
 
 void loop() {
   
