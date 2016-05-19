@@ -58,6 +58,10 @@ namespace aqtr
 				this.Hide();
 				new ViewerForm(ports[comboBoxPort.SelectedIndex], bauds[comboBoxBauds.SelectedIndex]).Show();
 			}
+			else
+			{
+			    MessageBox.Show("No com port detected", "Could not connect");
+			}
 		}
 	}
 }

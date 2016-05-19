@@ -15,7 +15,11 @@ namespace aqtr
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new SelectorForm());
-		}
+
+            Application.Run(new SelectorForm());
+            
+            //for testing without any port connnected
+            //Application.Run(new ViewerForm("",10));
+        }
 	}
 }

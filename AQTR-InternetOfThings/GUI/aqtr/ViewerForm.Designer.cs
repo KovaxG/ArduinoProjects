@@ -36,7 +36,7 @@ namespace aqtr
             this.labelDataName = new System.Windows.Forms.Label();
             this.labelDataValue = new System.Windows.Forms.Label();
             this.labelOffset = new System.Windows.Forms.Label();
-            this.labelOffsetValue = new System.Windows.Forms.Label();
+            this.textBoxOffsetValue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelConnectionData
@@ -67,6 +67,7 @@ namespace aqtr
             this.textBoxHistory.Size = new System.Drawing.Size(416, 235);
             this.textBoxHistory.TabIndex = 5;
             this.textBoxHistory.Visible = false;
+            this.textBoxHistory.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxHistory_KeyPress);
             // 
             // labelDataName
             // 
@@ -101,16 +102,16 @@ namespace aqtr
             this.labelOffset.Text = "Current Offset";
             this.labelOffset.Visible = false;
             // 
-            // labelOffsetValue
+            // textBoxOffsetValue
             // 
-            this.labelOffsetValue.AutoSize = true;
-            this.labelOffsetValue.Enabled = false;
-            this.labelOffsetValue.Location = new System.Drawing.Point(336, 153);
-            this.labelOffsetValue.Name = "labelOffsetValue";
-            this.labelOffsetValue.Size = new System.Drawing.Size(16, 17);
-            this.labelOffsetValue.TabIndex = 9;
-            this.labelOffsetValue.Text = "0";
-            this.labelOffsetValue.Visible = false;
+            this.textBoxOffsetValue.Enabled = false;
+            this.textBoxOffsetValue.Location = new System.Drawing.Point(347, 148);
+            this.textBoxOffsetValue.Name = "textBoxOffsetValue";
+            this.textBoxOffsetValue.Size = new System.Drawing.Size(72, 22);
+            this.textBoxOffsetValue.TabIndex = 9;
+            this.textBoxOffsetValue.Visible = false;
+            this.textBoxOffsetValue.TextChanged += new System.EventHandler(this.textBoxOffsetValue_TextChanged);
+            this.textBoxOffsetValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxOffsetValue_KeyPress);
             // 
             // ViewerForm
             // 
@@ -121,7 +122,7 @@ namespace aqtr
             this.BackgroundImage = global::aqtr.Properties.Resources.f;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(802, 453);
-            this.Controls.Add(this.labelOffsetValue);
+            this.Controls.Add(this.textBoxOffsetValue);
             this.Controls.Add(this.labelOffset);
             this.Controls.Add(this.labelDataValue);
             this.Controls.Add(this.labelDataName);
@@ -148,6 +149,6 @@ namespace aqtr
         private System.Windows.Forms.Label labelDataName;
         private System.Windows.Forms.Label labelDataValue;
         private System.Windows.Forms.Label labelOffset;
-        private System.Windows.Forms.Label labelOffsetValue;
+        private System.Windows.Forms.TextBox textBoxOffsetValue;
     }
 }

@@ -24,7 +24,8 @@ namespace aqtr
 		{
 			InitializeComponent();
 			labelConnectionData.Text = portName + " " + baudRate;
-			initializeCom(portName, baudRate);
+			if (!portName.Equals(""))
+                initializeCom(portName, baudRate);
 		    try
 		    {
 		        string fileName = "log_<date>.txt";
@@ -156,8 +157,8 @@ namespace aqtr
                     this.labelConnectionData.Enabled = !this.labelConnectionData.Enabled;
                     this.labelOffset.Visible = !this.labelOffset.Visible;
                     this.labelOffset.Enabled = !this.labelOffset.Enabled;
-                    this.labelOffsetValue.Visible = !this.labelOffsetValue.Visible;
-                    this.labelOffsetValue.Enabled = !this.labelOffsetValue.Enabled;
+                    this.textBoxOffsetValue.Visible = !this.textBoxOffsetValue.Visible;
+                    this.textBoxOffsetValue.Enabled = !this.textBoxOffsetValue.Enabled;
                     break;
                 case ('c'):
                     if (this.labelDataName.ForeColor == Color.White)
@@ -177,10 +178,76 @@ namespace aqtr
                         log.Flush();
                         log.Close();
                     }
+                    if (ComPort != null)
+                    {
+                        ComPort.Close();
+                    }
                     this.Dispose();
                     this.Close();
                     Application.Exit();
                     break;
+            }
+        }
+
+        private void textBoxOffsetValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'h')
+            {
+                ViewerForm_KeyPress(sender,e);
+                e.Handled = true;
+                this.Focus();
+            }
+            else if (e.KeyChar == (char) 27)
+            {
+                e.Handled = true;
+                //this.Focus(); Does not work as long as controlls are active
+
+                e.KeyChar = 'h';
+                ViewerForm_KeyPress(sender, e);
+                ViewerForm_KeyPress(sender, e);
+
+                this.Focus();
+            }
+            else
+            {
+                //'.' in case we had decimal offset
+                if ((e.KeyChar < '0' || e.KeyChar > '9') && e.KeyChar!= (char)8 /* && e.KeyChar!='.'*/)
+                {
+                    e.Handled = true;
+                }
+                
+            } 
+        }
+
+        private void textBoxHistory_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'h')
+            {
+                ViewerForm_KeyPress(sender, e);
+                this.Focus();
+            }
+            else if (e.KeyChar == (char)27)
+            {
+                e.Handled = true;
+                
+
+                e.KeyChar = 'h';
+                ViewerForm_KeyPress(sender, e);
+                ViewerForm_KeyPress(sender, e);
+
+                this.Focus(); // Does not work if above statements not used
+            }
+        }
+
+        private void textBoxOffsetValue_TextChanged(object sender, EventArgs e)
+        {
+            Int32.TryParse(this.textBoxOffsetValue.Text, out ValueOffset);
+
+            //labelDataValue.Text = ValueOffset.ToString();
+            if (MessageLast != null)
+            {
+                labelDataValue.Text = MessageLast.ValueInt.ToString();
+                MessageLast.ValueIntOffset = ValueOffset;
             }
         }
     }

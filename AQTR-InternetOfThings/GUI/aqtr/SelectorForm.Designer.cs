@@ -30,7 +30,7 @@
 		{
             this.comboBoxPort = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonConnect = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxBauds = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -40,7 +40,7 @@
             this.comboBoxPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPort.FormattingEnabled = true;
             this.comboBoxPort.Location = new System.Drawing.Point(160, 30);
-            this.comboBoxPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxPort.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxPort.Name = "comboBoxPort";
             this.comboBoxPort.Size = new System.Drawing.Size(160, 24);
             this.comboBoxPort.TabIndex = 0;
@@ -56,16 +56,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Serial Port";
             // 
-            // button1
+            // buttonConnect
             // 
-            this.button1.Location = new System.Drawing.Point(35, 121);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(287, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Connect";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonConnect.Location = new System.Drawing.Point(35, 121);
+            this.buttonConnect.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConnect.Name = "buttonConnect";
+            this.buttonConnect.Size = new System.Drawing.Size(287, 28);
+            this.buttonConnect.TabIndex = 2;
+            this.buttonConnect.Text = "Connect";
+            this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -83,7 +83,7 @@
             this.comboBoxBauds.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBauds.FormattingEnabled = true;
             this.comboBoxBauds.Location = new System.Drawing.Point(160, 74);
-            this.comboBoxBauds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxBauds.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxBauds.Name = "comboBoxBauds";
             this.comboBoxBauds.Size = new System.Drawing.Size(160, 24);
             this.comboBoxBauds.TabIndex = 4;
@@ -95,10 +95,10 @@
             this.ClientSize = new System.Drawing.Size(356, 174);
             this.Controls.Add(this.comboBoxBauds);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxPort);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SelectorForm";
             this.Text = "Traffic Tracker";
             this.ResumeLayout(false);
@@ -110,7 +110,7 @@
 
 		private System.Windows.Forms.ComboBox comboBoxPort;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button buttonConnect;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.ComboBox comboBoxBauds;
 	}
