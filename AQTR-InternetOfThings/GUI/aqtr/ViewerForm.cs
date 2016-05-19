@@ -138,6 +138,9 @@ namespace aqtr
                 this.labelDataName.Location = 
                     new System.Drawing.Point(backgroundImage.Width/2-this.labelDataName.Text.Length*5,
                     backgroundImage.Height/3);
+                this.labelDataValue.Location=
+                    new System.Drawing.Point(backgroundImage.Width / 2 - this.labelDataValue.Text.Length * 5,
+                    backgroundImage.Height / 3 + 30);
                 this.BackgroundImage = backgroundImage;
             }
         }
@@ -151,8 +154,23 @@ namespace aqtr
                     this.textBoxHistory.Enabled = !this.textBoxHistory.Enabled;
                     this.labelConnectionData.Visible = !this.labelConnectionData.Visible;
                     this.labelConnectionData.Enabled = !this.labelConnectionData.Enabled;
+                    this.labelOffset.Visible = !this.labelOffset.Visible;
+                    this.labelOffset.Enabled = !this.labelOffset.Enabled;
+                    this.labelOffsetValue.Visible = !this.labelOffsetValue.Visible;
+                    this.labelOffsetValue.Enabled = !this.labelOffsetValue.Enabled;
                     break;
-
+                case ('c'):
+                    if (this.labelDataName.ForeColor == Color.White)
+                    {
+                        this.labelDataValue.ForeColor = Color.Black;
+                        this.labelDataName.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        this.labelDataValue.ForeColor = Color.White;
+                        this.labelDataName.ForeColor = Color.White;
+                    }
+                    break;
                 case ((char)27):
                     if (log != null)
                     {

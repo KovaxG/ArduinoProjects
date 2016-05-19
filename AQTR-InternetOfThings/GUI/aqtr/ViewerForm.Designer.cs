@@ -93,20 +93,24 @@ namespace aqtr
             // labelOffset
             // 
             this.labelOffset.AutoSize = true;
+            this.labelOffset.Enabled = false;
             this.labelOffset.Location = new System.Drawing.Point(232, 151);
             this.labelOffset.Name = "labelOffset";
             this.labelOffset.Size = new System.Drawing.Size(97, 17);
             this.labelOffset.TabIndex = 8;
             this.labelOffset.Text = "Current Offset";
+            this.labelOffset.Visible = false;
             // 
             // labelOffsetValue
             // 
             this.labelOffsetValue.AutoSize = true;
+            this.labelOffsetValue.Enabled = false;
             this.labelOffsetValue.Location = new System.Drawing.Point(336, 153);
             this.labelOffsetValue.Name = "labelOffsetValue";
             this.labelOffsetValue.Size = new System.Drawing.Size(16, 17);
             this.labelOffsetValue.TabIndex = 9;
             this.labelOffsetValue.Text = "0";
+            this.labelOffsetValue.Visible = false;
             // 
             // ViewerForm
             // 
