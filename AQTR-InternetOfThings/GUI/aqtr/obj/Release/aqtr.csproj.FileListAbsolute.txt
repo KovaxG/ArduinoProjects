@@ -1,0 +1,8 @@
+D:\Projects\Visual Studio\aqtr\aqtr\bin\Release\aqtr.exe
+D:\Projects\Visual Studio\aqtr\aqtr\bin\Release\aqtr.pdb
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.SelectorForm.resources
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.ViewerForm.resources
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.Properties.Resources.resources
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.csproj.GenerateResource.Cache
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.exe
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Release\aqtr.pdb

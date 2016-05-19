@@ -1,0 +1,7 @@
+The .ino file provides the code for the Intel Galileo 2 to transmit the data
+
+Tips for the GUI:
+Logs are kept int the debug folder
+  Double click: change background.
+  'c' change text color
+  'h' history and other debug info
