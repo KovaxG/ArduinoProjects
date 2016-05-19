@@ -1,0 +1,7 @@
+2016-05-19 09:53:26| People Inside = 24
+2016-05-19 09:53:29| People Inside = 23
+2016-05-19 09:53:37| People Inside = 22
+2016-05-19 09:53:44| People Inside = 23
+2016-05-19 09:53:44| People Inside = 22
+2016-05-19 09:53:45| People Inside = 21
+2016-05-19 09:53:46| People Inside = 20

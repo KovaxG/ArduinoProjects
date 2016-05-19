@@ -1,0 +1,27 @@
+D:\Projects\Visual Studio\aqtr\aqtr\bin\Debug\aqtr.exe
+D:\Projects\Visual Studio\aqtr\aqtr\bin\Debug\aqtr.pdb
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.csprojResolveAssemblyReference.cache
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.Properties.Resources.resources
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.csproj.GenerateResource.Cache
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.exe
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.pdb
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.SelectorForm.resources
+D:\Projects\Visual Studio\aqtr\aqtr\obj\Debug\aqtr.ViewerForm.resources
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.exe
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.pdb
+C:\C#\Projects\aqtr\aqtr\bin\Debug\aqtr.exe
+C:\C#\Projects\aqtr\aqtr\bin\Debug\aqtr.pdb
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.csprojResolveAssemblyReference.cache
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.SelectorForm.resources
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.ViewerForm.resources
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.Properties.Resources.resources
+C:\C#\Projects\aqtr\aqtr\obj\Debug\aqtr.csproj.GenerateResource.Cache
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.exe
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.pdb
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\bin\Debug\aqtr.exe
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\bin\Debug\aqtr.pdb
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.csprojResolveAssemblyReference.cache
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.SelectorForm.resources
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.ViewerForm.resources
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.Properties.Resources.resources
+C:\C#\Projects\aqtr\AQTR-InternetOfThings\GUI\aqtr\obj\Debug\aqtr.csproj.GenerateResource.Cache
